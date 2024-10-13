@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waktu di Indonesia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: white;
+            color: #333;
+        }
+        #time_is_link {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 36px;
+            background: red;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #Indonesia_z41c {
+            font-size: 36px;
+            background: red;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .hak_cipta {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://time.is/Indonesia" id="time_is_link" rel="nofollow">Waktu di Indonesia:</a>
+    <span id="Indonesia_z41c"></span>
+
+    <script src="//widget.time.is/id.js"></script>
+    <script>
+        time_is_widget.init({
+            Indonesia_z41c: {
+                template: "TIME<br>DATE<br>SUN",
+                date_format: "dayname, dnum monthname year, week",
+                sun_format: "Matahari terbit: srhour:srminute Matahari terbenam: sshour:ssminute<br>Lama hari: dlhoursj dlminutesm",
+                coords: "-5.0000000,120.0000000"
+            }
+        });
+    </script>
+
+    <div class="hak_cipta">
+        <p>Dikembangkan Oleh Wahyu Sudrajad © 2024</p>
+    </div>
+
+</body>
+</html>
